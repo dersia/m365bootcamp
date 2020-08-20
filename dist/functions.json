@@ -1,0 +1,188 @@
+{
+    "functions": [
+        {
+            "description": "Adds two numbers.",
+            "id": "ADD",
+            "name": "ADD",
+            "parameters": [
+                {
+                    "description": "First number",
+                    "name": "first",
+                    "type": "number"
+                },
+                {
+                    "description": "Second number",
+                    "name": "second",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Adds2 two numbers.",
+            "id": "ADD2",
+            "name": "ADD2",
+            "parameters": [
+                {
+                    "description": "First number",
+                    "name": "first",
+                    "type": "number"
+                },
+                {
+                    "description": "Second number",
+                    "name": "second",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "dimensionality": "matrix",
+                "type": "number"
+            }
+        },
+        {
+            "description": "Adds two numbers using Azure Functions.",
+            "id": "CLOUDADD",
+            "name": "CLOUDADD",
+            "parameters": [
+                {
+                    "description": "First number",
+                    "name": "first",
+                    "type": "number"
+                },
+                {
+                    "description": "Second number",
+                    "name": "second",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Adds two numbers using Azure Functions.",
+            "id": "FANCYCLOUDALGO",
+            "name": "FANCYCLOUDALGO",
+            "parameters": [
+                {
+                    "description": "number",
+                    "name": "num",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Displays the current time once a second.",
+            "id": "CLOCK",
+            "name": "CLOCK",
+            "options": {
+                "stream": true
+            },
+            "parameters": [],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Increments a value once a second.",
+            "id": "INCREMENT",
+            "name": "INCREMENT",
+            "options": {
+                "stream": true
+            },
+            "parameters": [
+                {
+                    "description": "Amount to increment",
+                    "name": "incrementBy",
+                    "type": "number"
+                }
+            ],
+            "result": {
+                "type": "number"
+            }
+        },
+        {
+            "description": "Writes a message to console.log().",
+            "id": "LOG",
+            "name": "LOG",
+            "parameters": [
+                {
+                    "description": "String to write.",
+                    "name": "message",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Displays the current time once a second.",
+            "id": "CONNECT_TO_SIGNALR",
+            "name": "CONNECT_TO_SIGNALR",
+            "options": {
+                "stream": true
+            },
+            "parameters": [
+                {
+                    "description": "channel to connect to",
+                    "name": "channel",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Translate a Term using Microsoft Translate.",
+            "id": "TRANSLATE",
+            "name": "TRANSLATE",
+            "parameters": [
+                {
+                    "description": "Term to be translated",
+                    "name": "term",
+                    "type": "string"
+                },
+                {
+                    "description": "original language of the Term",
+                    "name": "from",
+                    "type": "string"
+                },
+                {
+                    "description": "language to which the Term is translated to",
+                    "name": "to",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        },
+        {
+            "description": "Translate a Term using Microsoft Translate (auto detect from).",
+            "id": "TRANSLATE_AUTO",
+            "name": "TRANSLATE_AUTO",
+            "parameters": [
+                {
+                    "description": "Term to be translated",
+                    "name": "term",
+                    "type": "string"
+                },
+                {
+                    "description": "language to which the Term is translated to",
+                    "name": "to",
+                    "type": "string"
+                }
+            ],
+            "result": {
+                "type": "string"
+            }
+        }
+    ]
+}
